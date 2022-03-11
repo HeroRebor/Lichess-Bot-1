@@ -33,3 +33,14 @@ challenge:                   # incoming challenges
   modes:                     # game modes to accept
  #   - casual                 # unrated games
  #   - rated                  # rated games - must comment if the engine doesn't try to win
+ greeting:
+    # Optional substitution keywords (include curly braces):
+    #   {opponent} to insert opponent's name
+    #   {me} to insert bot's name
+    hello: "Hello I am @{me}! !This bot is made by @Soloboy4! Best of luck @{opponent} .  Type !help for a list of commands I can respond to." # Message to send to chat at the start of a game
+    hello: "Hmm good move it's looking like it would be a long game!"#Message to send to chat after 50 moves done on the game
+    hello:"The game is going good!"#Message to send to chat after 100 moves done on the game
+    goodbye: "That was a beautiful game !Hope we meet soon again  on a game @{opponent}" # Message to send to chat at the end of a game if the game is won
+    goodbye:"Hmm this time I Lose but next time I will surely try to beat you!"#Message to send to chat at the end of the game if the game is losed
+    goodbye:"Hmm this time draw but I hope next time we get an perfect result of game!"#Message to send to chat at the end of the game if the game is draw
+
